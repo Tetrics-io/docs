@@ -1,38 +1,25 @@
 ---
-description: Intent-Centric Strategy Protocol
+description: Unified Margin Infrastructure for Exchange Builder on Hyperliquid
 ---
 
 # Welcome
 
-### Our Vision
+Hyperliquid is the fastest-growing ecosystems in crypto. With on-chain transparency and deep native liquidity, builders can launch their own exchanges while tapping Hyperliquid liquidity.
 
-Imagine a platform where you can compose any strategy across all crypto markets—on-chain, cross-chain, and off-chain—with unparalleled capital efficiency. Our vision is to empower users to define high-level, outcome-driven intents that abstract the underlying execution complexities. Whether you’re deploying advanced yield farming, creating intricate vault strategies, or orchestrating cross-chain liquidity moves, our system seamlessly integrates multiple protocols and data sources. Leveraging cutting-edge optimization algorithms, modular plugins, and formal verification techniques, our platform transforms these complex strategies into single, atomic transactions, ensuring maximum performance, security, and optimal capital utilization. This unified framework redefines decentralized finance by making sophisticated, multi-market strategies accessible and efficient for all users.
+Anyone can build perpetual exchange using Builder Code, and customize own perpetual market using HIP-3. Powered by Hyperliquid liquidity, Perps-as-a-Service is now expanding rapidly across the broader crypto ecosystem.
 
-### Before TETRICS <a href="#problem-statement" id="problem-statement"></a>
+<figure><img src=".gitbook/assets/スクリーンショット 2025-10-15 午後4.35.02.png" alt=""><figcaption><p>Live Exchange Builder Analytics on Hyperliquid <a href="https://app.coinmarketman.com/hypertracker/builders">*Hypertracker</a></p></figcaption></figure>
 
-{% hint style="danger" %}
-**Liquidity is fragmented across many blockchains / CEXs.**
+### What Tetrics Does
 
-Strategies across this fragmentation lead to find better profit opportunities, but will face higher execution costs and more complex risk exposure.
-{% endhint %}
+#### _**Hyperliquid Liquidity × DeFi  Liquidity across chains**_
 
-<figure><img src=".gitbook/assets/スクリーンショット 2025-03-30 午後11.16.15のコピー.png" alt=""><figcaption><p>*Execution happens on each chains &#x26; venues</p></figcaption></figure>
+In DeFi, new yield assets continuously appear across many chains. However, traders cannot use them as collateral for trading perps on Hyperliquid — which leads to missed huge opportunities, this is where Tetrics comes in.
 
-### After TETRICS <a href="#solution" id="solution"></a>
+If you’re using Builder Code or operating a HIP-3 exchange, Tetrics unlocks:
 
-{% hint style="success" %}
-Unify ANY strategy – on-chain, cross-chain and off-chain – into a single atomic on-chain transaction.&#x20;
+* _Customize collateralize a wide range of yield assets across chains_
+* _Seamless unified-margin trading experience_
+* _One integration — minimal development effort_
 
-**We are re-structuring liquidity architecture into a strategy-first architecture.**
-{% endhint %}
-
-<figure><img src=".gitbook/assets/スクリーンショット 2025-03-30 午後11.16.15のコピー3.png" alt="" width="375"><figcaption><p>*Strategy-First Liquidity Architecture</p></figcaption></figure>
-
-### Benefits <a href="#benefits" id="benefits"></a>
-
-1. **Increase Capital efficiency**\
-   TETRICS Strategy-first liquidity architecture enable portfolio margining across all chains and venues with open solver network.
-2. **Atomic Consolidation**\
-   Same-time execution of all legs, Minimize slippage, gas fees.
-3. **Privacy Preserving Execution**\
-   Protect strategy privacy while maintaining verifiable on-chain transparency
+Build different with Tetrics.

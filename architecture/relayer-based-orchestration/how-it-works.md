@@ -1,0 +1,26 @@
+# How it works
+
+#### Definition
+
+Users compose route through our API by specifying actions, parameters, and risk constraints such as maximum slippage and minimum health factor. Each strategy includes:
+
+* Collateral sourcing and bridging (e.g., Across for ETH → Hyperliquid)
+* Venue-specific actions (e.g., Hyperliquid supply/borrow/trade)
+* Risk parameters (e.g., maximum leverage, liquidation buffers)
+
+#### Pre-Trade Validation & Risk Engine
+
+* **Portfolio Simulation:** Computes post-trade positions, liabilities, and health across venues.
+* **Guardrails:** Enforces user-configurable limits including slippage bands, minimum collateral ratios, and maximum borrow amounts.
+* **Oracle Checks:** Validates prices, ensures data freshness, and rejects route that would breach health thresholds.
+
+#### Execution Modes
+
+* **Same-Chain Atomic:** All actions execute in a single transaction bundle with no partial failures.
+* **Cross-Chain Orchestrated:** Steps sequence across domains with explicit SLAs, timeouts, and compensations for failed legs.
+
+#### Settlement & Monitoring
+
+* **Settlement Watchers:** Track bridge finality and gate dependent actions until funds arrive.
+* **Portfolio Accounting:** Real-time position tracking, PnL, funding/borrow costs, and health alerts.
+* **Failure Recovery:** Compensating actions and user-configurable retry/cancel policies.
