@@ -7,8 +7,6 @@
 * [Overview](architecture/overview.md)
 * [Relayer-Based Orchestration](architecture/relayer-based-orchestration/README.md)
   * [How it works](architecture/relayer-based-orchestration/how-it-works.md)
-  * [Key Benefits](architecture/relayer-based-orchestration/key-benefits.md)
-  * [Supported Chains & Protocols](architecture/relayer-based-orchestration/supported-chains-and-protocols.md)
 * [Intent-Centric framework](architecture/intent-centric-framework.md)
 * [Intents](architecture/intents.md)
 * [Solvers](architecture/solvers/README.md)
@@ -20,6 +18,7 @@
 * [MEV (Maximal Extractable Value)](architecture/mev-maximal-extractable-value/README.md)
   * [Advanced Strategies for Mitigating MEV](architecture/mev-maximal-extractable-value/advanced-strategies-for-mitigating-mev.md)
   * [Comparative Analysis with Existing MEV Blockers](architecture/mev-maximal-extractable-value/comparative-analysis-with-existing-mev-blockers.md)
+* [Supported Chains & Protocols](architecture/supported-chains-and-protocols.md)
 * [References](architecture/references.md)
 * [Roadmap](architecture/roadmap.md)
 

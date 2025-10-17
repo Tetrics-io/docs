@@ -1,12 +1,13 @@
 # Intent-Centric framework
 
-* The same complex multiple flows will upgrades to signed intents under EIP-7521 and Anoma's architecture.
+_The flows will upgrades to signed intents under EIP-7521 and Anoma's architecture._
+
 * Solvers compete to find optimal execution paths, prioritizing privacy, capital efficiency, and cross-venue risk netting.
 * Batch auctions and sealed-bid mechanisms mitigate MEV and information leakage.
 
 ### **Intent-Centric Framework**
 
-TETRICS protocol is an intent‑centric framework that streamlines complex workflows by translating user-specified transaction intents into efficient, batched on‑chain operations. Leveraging the [EIP‑7521](https://eips.ethereum.org/EIPS/eip-7521) standard & anoma's architecture, users can submit signed intents for activities like trading, staking, yield farming, and more across liquidity fragmentation. These intents are then aggregated and optimized through a specialized network of solvers, ensuring that transactions are executed in a secure, cost‑efficient manner.
+TETRICS protocol is an intent‑centric framework that streamlines complex flows by translating user-specified transaction intents into efficient, batched on‑chain operations. Leveraging the [EIP‑7521](https://eips.ethereum.org/EIPS/eip-7521) standard & anoma's architecture, users can submit signed intents for activities like trading, staking, yield farming, and more across liquidity fragmentation. These intents are then aggregated and optimized through a specialized network of solvers, ensuring that transactions are executed in a secure, cost‑efficient manner.
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>TETRICS Protocol Architecture</p></figcaption></figure>
 

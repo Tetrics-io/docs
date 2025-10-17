@@ -20,6 +20,7 @@ If you’re using Builder Code or operating a HIP-3 exchange, Tetrics unlocks:
 
 * _Customize collateralize a wide range of yield assets across chains_
 * _Seamless unified-margin trading experience_
+* _Customizable interest model to attract retail/institutional traders_
 * _One integration — minimal development effort_
 
 Build different with Tetrics.
