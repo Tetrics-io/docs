@@ -18,9 +18,9 @@ In DeFi, new yield assets continuously appear across many chains. However, trade
 
 If you’re using Builder Code or operating a HIP-3 exchange, Tetrics unlocks:
 
-* _Customize collateralize a wide range of yield assets across chains_
+* _Collateralize a wide range of yield assets across chains_
 * _Seamless unified-margin trading experience_
-* _Customizable interest model to attract retail/institutional traders_
+* _Customized lending pool to attract retail/institutional traders_
 * _One integration — minimal development effort_
 
 Build different with Tetrics.

@@ -7,26 +7,34 @@
 
 ### Benefit
 
-#### Collateralize a wide range of yield assets across chains without integration effort
+#### Collateralize a wide range of yield assets across chains
 
-* Approach\
-  Integrate multiple protocols across chains → A single call to Tetrics SDK
-* Adapter rollout cadence\
-  \~1–2 weeks (review, integration) (est.)  →  <  1 day (new venue = new adapter)
-
-_Focus on what actually matters without technical frictions !_
+* Bundle/Atomic Transaction for cross-chain multi-step flows, abstracts away complexity\
+  (e.g "Supply wETH on Aave → Borrow USDC on Aave → Bridge USDC to HL)
+* No partial settlement, Full revert on failure
+* Save \~40% gas cost
+* Execution route optimization by solvers
 
 #### Seamless Unified-Margin Trading Experience
 
-* Bundle/Atomic Transaction
-* Full revert on failure
-* Save \~40% gas cost vs multi-tx flows
-* Auto Borrow/Rebalance margin across chain
 * \~0.3–2s action latency via HL API fallback
+* Auto Borrow/Rebalance margin across chain
+* <mark style="color:$success;">MEV protection in liquidation event</mark>
 
-#### Customizable Interest Model Lending Pool
+#### Customized lending pool to attract retail/institutional traders
 
 * Define Borrow Asset, Collateral Asset, Cap, LTV / LLTV
-* Trading fees reward lenders model, instead of on-chain variable borrow rates.
-* Customizable Fixed-Rate / Fixed-Term Margin
+* Capped Interest-Free Margin Borrowing: Trading fees reward lenders model
+* Fixed-Rate / Fixed-Term Margin
+* Auto routing into other pools with certain conditions
+
+#### Privacy Preservation
+
 * Shields traders’ margin positions through Anoma’s Taiga framework.
+
+#### &#x20;_One integration — minimal development effort_
+
+* Integrate complex actions across multiple protocols and chains with a single call to Tetrics SDK
+* Adapter rollout cadence:  Less than  1 day (new venue = new adapter)
+
+_Focus on what actually matters without technical frictions !_

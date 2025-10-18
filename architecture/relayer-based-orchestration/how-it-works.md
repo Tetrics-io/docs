@@ -2,10 +2,11 @@
 
 #### Definition
 
-Users compose route through our API by specifying actions, parameters, and risk constraints such as maximum slippage and minimum health factor. Each flows includes:
+Builders compose route through our API by specifying actions, parameters, and risk constraints such as maximum slippage and minimum health factor. Each flows includes:
 
-* Collateral sourcing and bridging (e.g., Across for ETH → Hyperliquid)
-* Venue-specific actions (e.g., Hyperliquid supply/borrow/trade)
+* Collateral sourcing (e.g., weETH on mainnet)
+* Venue-specific actions (e.g., supply/borrow on Aave, open/close position on Hyperliquid)
+* Bridging (e.g., Across: USDC from Mainnet → Hyperliquid)
 * Risk parameters (e.g., maximum leverage, liquidation buffers)
 
 #### Pre-Trade Validation & Risk Engine

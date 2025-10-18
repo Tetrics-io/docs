@@ -9,6 +9,8 @@
   * [How it works](architecture/relayer-based-orchestration/how-it-works.md)
 * [Intent-Centric framework](architecture/intent-centric-framework.md)
 * [Intents](architecture/intents.md)
+* [Order Flow](architecture/order-flow/README.md)
+  * [Declarative Input to Atomic On‑Chain Execution](architecture/order-flow/declarative-input-to-atomic-on-chain-execution.md)
 * [Solvers](architecture/solvers/README.md)
   * [Advanced Optimization Algorithms](architecture/solvers/advanced-optimization-algorithms.md)
   * [Role of Searchers & Resolvers](architecture/solvers/role-of-searchers-and-resolvers.md)
@@ -18,14 +20,11 @@
 * [MEV (Maximal Extractable Value)](architecture/mev-maximal-extractable-value/README.md)
   * [Advanced Strategies for Mitigating MEV](architecture/mev-maximal-extractable-value/advanced-strategies-for-mitigating-mev.md)
   * [Comparative Analysis with Existing MEV Blockers](architecture/mev-maximal-extractable-value/comparative-analysis-with-existing-mev-blockers.md)
-* [Supported Chains & Protocols](architecture/supported-chains-and-protocols.md)
 * [References](architecture/references.md)
+* [Supported Chains & Protocols](architecture/supported-chains-and-protocols.md)
 * [Roadmap](architecture/roadmap.md)
 
 ## Developer
-
-* [Order Flow](developer/order-flow/README.md)
-  * [Declarative Input to Atomic On‑Chain Execution](developer/order-flow/declarative-input-to-atomic-on-chain-execution.md)
 
 ***
 
