@@ -1,7 +1,5 @@
 # Order Flow
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>*TETRICS Architecture</p></figcaption></figure>
-
 TETRICS workflow is built on the principle that users should simply declare their desired outcomes and leave the intricate transaction orchestration to the system. In technical terms, the protocol translates high-level signed intents into an optimized, atomic on‑chain transaction. This section details the end‑to‑end flow of the system and the technical benefits of this declarative approach.
 
 ### Detailed End‑to‑End Flow

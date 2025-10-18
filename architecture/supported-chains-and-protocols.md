@@ -4,8 +4,8 @@ Update Oct17/2025
 
 #### Chains
 
-* **Primary:** Hyperliquid, Ethereum, Arbitrum, Optimism, Base, Polygon
-* **Bridges:** Across, deBridge, LayerZero, Axelar
+* **Primary:** Hyperliquid, Ethereum~~, Arbitrum, Optimism, Base, Polygon~~
+* **Bridges:** Across~~, deBridge, LayerZero, Axelar~~
 
 #### Protocols
 

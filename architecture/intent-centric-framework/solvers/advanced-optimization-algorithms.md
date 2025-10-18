@@ -24,5 +24,5 @@ To further refine the optimization process, TETRICS employs heuristic search tec
 
 TETRICS's solver module represents transaction intents as nodes in a graph, with potential matches shown as edges. Using algorithms inspired by graph theory, such as maximum matching or minimum-cost flow, the solver identifies optimal pairs or groups of intents for execution. These graph theory techniques ensure efficient and effective matching, improving execution speed and
 
-* **Example**: When multiple users submit intents with complementary conditions (e.g., one intent to buy and another to sell at the same price), the solver uses graph-based matching to quickly find and pair these intents, similar to solving a bipartite matching problem.
+* **Example**: When multiple users submit intents with complementary conditions (e.g., one intent to borrow and another to repay at the same venue), the solver uses graph-based matching to quickly find and pair these intents, similar to solving a bipartite matching problem.
 * **Benefits**: This approach reduces search complexity, efficiently identifies compatible intents, and streamlines the formation of execution batches.

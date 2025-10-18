@@ -17,7 +17,7 @@
 
 #### Seamless Unified-Margin Trading Experience
 
-* \~0.3–2s action latency via HL API fallback
+* Fast action latency via HL API fallback
 * Auto Borrow/Rebalance margin across chain
 
 #### Customized lending pool to attract retail/institutional traders

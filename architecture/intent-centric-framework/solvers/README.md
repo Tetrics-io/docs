@@ -6,7 +6,7 @@ Solvers are the smart agents behind TETRICS protocol that take user-submitted in
 
 Solvers are specialized components that scan batches of blockchain intents to find the best execution paths. They aim to match intents from different users, optimizing for lower fees, speed, and overall security. By leveraging real‑time data and various liquidity sources, solvers ensure that every transaction is processed in the most effective manner possible.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **How Do Solvers Work?**
 

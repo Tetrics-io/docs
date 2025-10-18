@@ -8,29 +8,16 @@ Blockchain intents are like clear, human-friendly instructions that tell a syste
 
 ### **How Do They Work?**
 
-{% stepper %}
-{% step %}
-_**Intent Declaration**_
-
-When Alice submits her intent to trade tokens, she signs a message that outlines her goal—buying tokens at a specific price or under certain conditions. Similarly, Bob could declare an intent to stake his tokens for rewards. These declarations are structured following standards like EIP‑7521 and EIP‑7683, ensuring they’re secure and interoperable across various blockchain systems.
-{% endstep %}
-
-{% step %}
-_**Abstraction of Complexity**_
-
-The beauty of intents is that they abstract away the nitty-gritty of blockchain operations. Users like Alice and Bob don’t need to worry about gas fees, smart contract interactions, or even the specific sequence of events needed to execute their orders. Instead, they rely on the protocol to interpret their high-level instructions.
-{% endstep %}
-
-{% step %}
-_**Automated Processing**_
-
-Once intents are submitted, specialized components (solvers) collect and group these intents into batches. The system then figures out the best way to process them—optimizing for cost and efficiency—without requiring further input from Alice or Bob.
-{% endstep %}
-{% endstepper %}
+1. _**Intent Declaration**_\
+   When Alice submits her intent to trade tokens, she signs a message that outlines her goal—buying tokens at a specific price or under certain conditions. Similarly, Bob could declare an intent to stake his tokens for rewards. These declarations are structured following standards like EIP‑7521 and EIP‑7683, ensuring they’re secure and interoperable across various blockchain systems.
+2. _**Abstraction of Complexity**_\
+   The beauty of intents is that they abstract away the nitty-gritty of blockchain operations. Users like Alice and Bob don’t need to worry about gas fees, smart contract interactions, or even the specific sequence of events needed to execute their orders. Instead, they rely on the protocol to interpret their high-level instructions.
+3. _**Automated Processing**_\
+   Once intents are submitted, specialized components (solvers) collect and group these intents into batches. The system then figures out the best way to process them—optimizing for cost and efficiency—without requiring further input from Alice or Bob.
 
 ### **Example:**
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * Alice signs an intent that reads, “Buy 100 tokens if the price drops to $1.” She doesn’t need to specify which smart contract to use or how the transaction will be executed.
 * Bob signs a similar intent saying, “Stake 50 tokens to earn rewards,” again leaving the technical details to the protocol.
