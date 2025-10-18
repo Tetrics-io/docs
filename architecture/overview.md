@@ -19,7 +19,6 @@
 
 * \~0.3–2s action latency via HL API fallback
 * Auto Borrow/Rebalance margin across chain
-* <mark style="color:$success;">MEV protection in liquidation event</mark>
 
 #### Customized lending pool to attract retail/institutional traders
 
