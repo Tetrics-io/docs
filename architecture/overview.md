@@ -1,10 +1,5 @@
 # Overview
 
-<mark style="color:$success;">"Insert 2\~3 mins Video which explain entire product overview until frontend implemented."</mark>\
-&#x20;<mark style="color:$success;">"automating complex flow = Unified margin" ??　We need to make it with easy videos how ppl can understand overview within 2mins.</mark>
-
-
-
 ### Benefit
 
 #### Collateralize a wide range of yield assets across chains
@@ -32,7 +27,7 @@
 
 * Shields traders’ margin positions through Anoma’s Taiga framework.
 
-#### &#x20;_One integration — minimal development effort_
+#### &#x20;One integration — minimal development effort
 
 * Integrate complex actions across multiple protocols and chains with a single call to Tetrics SDK
 * Adapter rollout cadence:  Less than  1 day (new venue = new adapter)
