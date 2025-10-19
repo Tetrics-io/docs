@@ -18,8 +18,8 @@
 
 #### Seamless Unified-Margin Trading Experience
 
-* Fast action latency via HL API fallback
-* Auto Borrow/Rebalance margin across chain
+* Automated cross-chain borrow, repay, and rebalance margin operations via Hyperliquid Corewriter
+* Low-latency atomic execution, Seamless unified-margin operations
 
 #### Customized lending pool to attract retail/institutional traders
 

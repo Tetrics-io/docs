@@ -2,7 +2,7 @@
 
 ### MEV Risk in Unified Margin Flows
 
-Tetrics bundles multi-step transactions across chains to deliver a seamless unified-margin experience. However, these complex on-chain interactions naturally introduce MEV (Maximal Extractable Value) exposure — especially during automated borrow, repay, and rebalance margin operations executed via Hyperliquid Corewriter. MEV Attack risk will increases in high volatility market.
+Tetrics bundles multi-step transactions across chains to deliver a seamless unified-margin experience. However, these complex on-chain interactions naturally introduce MEV (Maximal Extractable Value) exposure — especially during automated cross-chain borrow, repay, and rebalance margin operations  via Hyperliquid Corewriter. MEV Attack risk will increases in high volatility market.
 
 MEV represents the extra profit that can be captured by reordering, including, or excluding transactions within a block. In simpler terms, it’s the potential gain a miner or validator might extract by strategically ordering transactions.&#x20;
 

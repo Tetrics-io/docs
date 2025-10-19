@@ -24,7 +24,6 @@ TETRICS workflow is built on the principle that users should simply declare thei
 
 ### Benefits of the Declarative Approach
 
-{% hint style="success" %}
 1. **Simplicity**\
    Users specify their desires (e.g., "buy tokens at $1") without dealing with the complexities of smart contract interactions.
 2. **Efficiency & Optimization**\
@@ -35,4 +34,3 @@ TETRICS workflow is built on the principle that users should simply declare thei
    Users specify their desires (e.g., "buy tokens at $1") without dealing with the complexities of smart contract interactions.By batching multiple intents and integrating diverse liquidity sources, the protocol efficiently handles high transaction volumes without performance loss.
 5. **Interoperability**\
    The use of standardized formats (EIP-7521) and a modular adapter framework ensures seamless integration across various protocols and platforms.
-{% endhint %}
