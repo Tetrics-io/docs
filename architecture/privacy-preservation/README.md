@@ -2,7 +2,7 @@
 
 ### Shielded Intents
 
-Exposing a trader’s margin operations on-chain is risky — especially when they are collateralizing thin-liquidity assets.
+Exposing a trader’s unified margin operations on-chain is risky — especially when they are collateralizing thin-liquidity assets.
 
 In most DeFi protocols today, every action is publicly visible on-chain, revealing who did what and at what time. While this transparency provides verifiability, it also leaks sensitive data—from user balances to strategy details. This can be detrimental to businesses or advanced traders who rely on proprietary alpha.
 

@@ -25,7 +25,7 @@
 
 #### Privacy Preservation
 
-* Shields traders’ margin operations through Anoma’s Taiga framework.
+* Shields traders’ unified margin operations through Anoma’s Taiga framework.
 
 #### &#x20;One integration — minimal development effort
 
