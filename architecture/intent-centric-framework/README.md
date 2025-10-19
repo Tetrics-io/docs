@@ -11,10 +11,6 @@ Streamlines complex flows by translating user-specified transaction intents into
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>TETRICS Intent Centric Framework</p></figcaption></figure>
 
-<mark style="color:$success;">Recreate this image? well hmm. Here is more should focus on cross chain complex work flows to make it great. Not mention about shield , automate is okey but</mark>&#x20;
-
-
-
 1. _**Intent Submission**_\
    Users create and sign transaction intents that encapsulate high‑level complex actions without worrying about the underlying blockchain intricacies.
 2. _**Batching & Aggregation**_\
