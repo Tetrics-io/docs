@@ -13,6 +13,7 @@
   (e.g "Supply wETH on Aave → Borrow USDC on Aave → Bridge USDC to HL)
 * No partial settlement, Full revert on failure
 * Save \~40% gas cost
+* MEV Protection
 * Execution route optimization by solvers
 
 #### Seamless Unified-Margin Trading Experience

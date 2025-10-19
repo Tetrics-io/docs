@@ -1,6 +1,12 @@
 # MEV (Maximal Extractable Value)
 
-MEV represents the extra profit that can be captured by reordering, including, or excluding transactions within a block. In simpler terms, it’s the potential gain a miner or validator might extract by strategically ordering transactions. TETRICS is designed to mitigate the risks associated with MEV by aggregating intents into batches and using intelligent solvers that optimize execution order, thereby reducing opportunities for front-running or other exploitative behaviors.
+### MEV Risk in Unified Margin Flows
+
+Tetrics bundles multi-step transactions across chains to deliver a seamless unified-margin experience. However, these complex on-chain interactions naturally introduce MEV (Maximal Extractable Value) exposure — especially during automated borrow, repay, and rebalance margin operations executed via Hyperliquid Corewriter. MEV Attack risk will increases in high volatility market.
+
+MEV represents the extra profit that can be captured by reordering, including, or excluding transactions within a block. In simpler terms, it’s the potential gain a miner or validator might extract by strategically ordering transactions.&#x20;
+
+TETRICS is designed to mitigate the risks associated with MEV by aggregating intents into batches and using intelligent solvers that optimize execution order, thereby reducing opportunities for front-running or other exploitative behaviors.
 
 ### **MEV manipulation Problems**
 
@@ -22,5 +28,5 @@ To safeguard user transactions, TETRICS  employs multiple layers of defense:
 
 * _Batching & Aggregation_: By grouping multiple intents together, the protocol obscures individual transaction details, making it harder for malicious actors to target specific orders.
 * &#x20;_Solver Optimization_: Solvers analyze batches holistically to determine the most efficient execution paths, further reducing the risk of MEV exploitation.
-* &#x20;_Atomic Execution_: Transactions are executed atomically, ensuring that either all actions within a batch are successfully completed, or none are—this minimizes the impact of potential manipulation.
+* _Atomic Execution_: Transactions are executed atomically, ensuring that either all actions within a batch are successfully completed, or none are—this minimizes the impact of potential manipulation.
 
