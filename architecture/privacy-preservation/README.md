@@ -2,11 +2,11 @@
 
 ### Shielded Intents
 
-Exposing a trader’s margin positions on-chain is risky — especially when they are collateralizing thin-liquidity assets.
+Exposing a trader’s margin operations on-chain is risky — especially when they are collateralizing thin-liquidity assets.
 
 In most DeFi protocols today, every action is publicly visible on-chain, revealing who did what and at what time. While this transparency provides verifiability, it also leaks sensitive data—from user balances to strategy details. This can be detrimental to businesses or advanced traders who rely on proprietary alpha.
 
-The Anoma architecture confronts this challenge head-on by distinguishing between “the who” and “the what,” i.e., the identity of the user (or solver) and the data/logic of their intents. By controlling which parts of an intent are visible, we can preserve privacy of traders’ margin positions.
+The Anoma architecture confronts this challenge head-on by distinguishing between “the who” and “the what,” i.e., the identity of the user (or solver) and the data/logic of their intents. By controlling which parts of an intent are visible, we can preserve privacy of traders’ margin operations.
 
 ### Intent Privacy Levels
 
