@@ -1,6 +1,6 @@
 # Adapter Framework
 
-<div align="center"><figure><img src=".gitbook/assets/スクリーンショット 2025-03-30 午後11.16.15のコピー7.png" alt="" width="375"><figcaption><p>Adapter Framework</p></figcaption></figure></div>
+<div align="center"><figure><img src="../.gitbook/assets/スクリーンショット 2025-03-30 午後11.16.15のコピー7.png" alt="" width="375"><figcaption><p>Adapter Framework</p></figcaption></figure></div>
 
 1. Drag-and-Drop Strategies Builder \
    Express strategy in all crypto market into on-chain intent.

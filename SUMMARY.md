@@ -21,15 +21,15 @@
 * [Customized Lending Pool](architecture/customized-lending-pool.md)
 * [Privacy Preservation](architecture/privacy-preservation/README.md)
   * [Sealed-Bid Batch Auction](architecture/privacy-preservation/sealed-bid-batch-auction.md)
+* [Adapter Framework](architecture/adapter-framework.md)
 * [References](architecture/references.md)
 * [Supported Chains & Protocols](architecture/supported-chains-and-protocols.md)
-* [Roadmap](architecture/roadmap.md)
 
 ## Developer
 
 ***
 
-* [Adapter Framework](adapter-framework.md)
+* [Roadmap](roadmap.md)
 
 ## Strategies
 

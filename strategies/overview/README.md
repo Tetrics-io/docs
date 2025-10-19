@@ -1,7 +1,7 @@
 # Overview
 
 Execute any type of strategy into on-chain transaction based on specific strategy intents.\
-TETRICS's [adopter framework ](../../adapter-framework.md)enables asset manager to do everything, such as complex trading strategies, vault operation, staking/yield farming management with just a few lines of code.
+TETRICS's [adopter framework ](../../architecture/adapter-framework.md)enables asset manager to do everything, such as complex trading strategies, vault operation, staking/yield farming management with just a few lines of code.
 
 ### Benefit for building strategy on TETRICS
 
