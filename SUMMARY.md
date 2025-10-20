@@ -18,21 +18,19 @@
     * [Comparative Analysis with Existing MEV Blockers](architecture/intent-centric-framework/mev-maximal-extractable-value/comparative-analysis-with-existing-mev-blockers.md)
 * [Order Flow](architecture/order-flow/README.md)
   * [Declarative Input to Atomic On‑Chain Execution](architecture/order-flow/declarative-input-to-atomic-on-chain-execution.md)
-* [Customized Lending Pool](architecture/customized-lending-pool.md)
 * [Privacy Preservation](architecture/privacy-preservation/README.md)
   * [Sealed-Bid Batch Auction](architecture/privacy-preservation/sealed-bid-batch-auction.md)
 * [Adapter Framework](architecture/adapter-framework.md)
 * [References](architecture/references.md)
-* [Supported Chains & Protocols](architecture/supported-chains-and-protocols.md)
 
 ## Developer
 
-***
-
-* [Roadmap](roadmap.md)
+* [Supported Protocols](developer/supported-protocols.md)
 
 ## Strategies
 
+* [Roadmap](strategies/roadmap.md)
 * [Overview](strategies/overview/README.md)
   * [Vault Operation](strategies/overview/vault-operation.md)
   * [Yield Farming Management](strategies/overview/yield-farming-management.md)
+* [Customized Lending Pool](strategies/customized-lending-pool.md)

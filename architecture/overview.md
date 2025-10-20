@@ -16,13 +16,6 @@
 * Automated cross-chain borrow, repay, and rebalance margin operations via Hyperliquid Corewriter
 * Low-latency atomic execution, Seamless unified-margin operations
 
-#### Customized lending pool to attract retail/institutional traders
-
-* Define Borrow Asset, Collateral Asset, Cap, LTV / LLTV
-* Capped Interest-Free Margin Borrowing: Trading fees reward lenders model
-* Fixed-Rate / Fixed-Term Margin
-* Auto routing into other pools with certain conditions
-
 #### Privacy Preservation
 
 * Shields traders’ unified margin operations through Anoma’s Taiga framework.
