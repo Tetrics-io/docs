@@ -25,12 +25,12 @@
 
 ## Developer
 
-* [Supported Protocols](developer/supported-protocols.md)
+* [Supported Protocols](architecture/supported-chains-and-protocols.md)
 
 ## Strategies
 
-* [Roadmap](strategies/roadmap.md)
+* [Roadmap](roadmap.md)
 * [Overview](strategies/overview/README.md)
   * [Vault Operation](strategies/overview/vault-operation.md)
   * [Yield Farming Management](strategies/overview/yield-farming-management.md)
-* [Customized Lending Pool](strategies/customized-lending-pool.md)
+* [Customized Lending Pool](architecture/customized-lending-pool.md)
