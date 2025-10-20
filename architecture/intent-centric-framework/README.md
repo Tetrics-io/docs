@@ -1,6 +1,6 @@
 # Intent-Centric framework
 
-[Relayer-Based Orchestration](../relayer-based-orchestration/) will upgrades to signed intents under EIP-7521 and Anoma's architecture.
+[Relayer-Based Orchestration](../relayer-based-orchestration.md) will upgrades to signed intents under EIP-7521 and Anoma's architecture.
 
 * Solvers compete to find optimal execution paths, prioritizing privacy, capital efficiency, and cross-venue risk netting.
 * Batch auctions and sealed-bid mechanisms mitigate MEV and information leakage.

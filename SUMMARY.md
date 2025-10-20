@@ -5,8 +5,7 @@
 ## Architecture
 
 * [Overview](architecture/overview.md)
-* [Relayer-Based Orchestration](architecture/relayer-based-orchestration/README.md)
-  * [How it works](architecture/relayer-based-orchestration/how-it-works.md)
+* [Relayer-Based Orchestration](architecture/relayer-based-orchestration.md)
 * [Intent-Centric framework](architecture/intent-centric-framework/README.md)
   * [Intents](architecture/intent-centric-framework/intents.md)
   * [Solvers](architecture/intent-centric-framework/solvers/README.md)
