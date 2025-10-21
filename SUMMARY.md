@@ -24,6 +24,7 @@
 
 ## Developer
 
+* [Contracts](developer/contracts.md)
 * [Supported Protocols](architecture/supported-chains-and-protocols.md)
 
 ## Strategies
