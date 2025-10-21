@@ -26,6 +26,7 @@
 
 * [Contracts](developer/contracts.md)
 * [Supported Protocols](architecture/supported-chains-and-protocols.md)
+* [API Reference](developer/api-reference.md)
 
 ## Strategies
 
