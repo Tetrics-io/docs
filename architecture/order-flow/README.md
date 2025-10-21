@@ -1,36 +1,60 @@
 # Order Flow
 
-TETRICS workflow is built on the principle that users should simply declare their desired outcomes and leave the intricate transaction orchestration to the system. In technical terms, the protocol translates high-level signed intents into an optimized, atomic on‑chain transaction. This section details the end‑to‑end flow of the system and the technical benefits of this declarative approach.
+The TETRICS workflow operates on the premise that users only need to specify their desired outcomes, allowing the system to handle the complex transaction orchestration. Technically, this protocol converts high-level signed intents into optimized, atomic on-chain transactions. In its initial version (V0), this is achieved through a relayer model, as illustrated below. This section outlines the complete process of the system and highlights the technical advantages of this declarative approach.
+
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ### Detailed End‑to‑End Flow
 
-1. _**Intent Submission**_\
-   Users specify their desired operation by signing a message (e.g., “buy 100 tokens if the price is ≤ $1”), adhering to EIP-7521 for structured, secure, and interoperable intents.
-2. _**Batch Aggregation**_
-   * **Standardization:** Intents are standardized to ensure security and interoperability.
-   * **Grouping:** Intents are collected until a predefined batch size is reached, enhancing privacy and liquidity through aggregation.
-3. _**Solver Optimization**_
-   * **Intra‑Batch Matching:** Intelligent solvers find optimal matches within the batch to minimize gas fees and latency.
-   * **External Liquidity Integration:** If no match is found, solvers dynamically query on-chain and off-chain liquidity sources.
-4. _**Adapter Framework Integration**_
-   * **Algorithmic Processing:** Custom algorithms ensure efficient matching and optimization with minimal computational overhead.
-   * **Protocol Bridging:** The framework integrates diverse DeFi/CeFi protocols, using standardized APIs to normalize data and incorporate market insights.
-5. _**Execution Engine Assembly**_
-   * **Atomic Transaction Construction:** Optimized plans are compiled into a single atomic transaction, ensuring all operations execute seamlessly or revert together.
-   * **Gas Optimization Techniques:** Engine consolidates actions to reduce gas usage and transaction fees.
-6. _**On‑Chain Transaction Execution**_
-   * **Submission:** The engine executes consolidated actions on-chain into one atomic transaction to minimize gas usage and transaction fees, finalizing the process efficiently.
-   * **Verification & Confirmation:** Engine consolidates actions to reduce gas usage and transaction fees.
+#### Phase 1: Validation
 
-### Benefits of the Declarative Approach
+1. **Composition**\
+   End user(exchanges/individual users) composes the know hows of collateral.
+2. **Parameter Validation**\
+   The SDK validates using API and JSON protocol configurations. A generic validator confirms all parameters.
 
-1. **Simplicity**\
-   Users specify their desires (e.g., "buy tokens at $1") without dealing with the complexities of smart contract interactions.
-2. **Efficiency & Optimization**\
-   Batching intents with intelligent solvers optimizes execution paths, lowering gas costs and reducing latency.
-3. **Security & Atomicity**\
-   The atomic execution model processes transactions entirely, reducing partial failures and minimizing exposure to front-running attacks.
-4. **Scalability**\
-   Users specify their desires (e.g., "buy tokens at $1") without dealing with the complexities of smart contract interactions.By batching multiple intents and integrating diverse liquidity sources, the protocol efficiently handles high transaction volumes without performance loss.
-5. **Interoperability**\
-   The use of standardized formats (EIP-7521) and a modular adapter framework ensures seamless integration across various protocols and platforms.
+#### Phase 2: Permit2 Signing
+
+3. **Batch Payload Preparation**\
+   The API prepares the Permit2 batch payload.
+4. **Signature Collection**\
+   The user signs an EIP-712 message for gasless approval.
+
+#### Phase 3: Ethereum Execution
+
+5. **Token Transfer**\
+   Permit2 transfers tokens from the user to the executor.
+6. **Stake ETH with Lido**\
+   Stake ETH to receive stETH.
+7. **Wrap stETH to wstETH**\
+   Wrap stETH to obtain wstETH.
+8. **Supply Collateral to Morpho**\
+   Supply wstETH as collateral.
+9. **Borrow USDC from Morpho**\
+   Borrow USDC.
+10. **Bridge USDC with Across**\
+    Bridge USDC to Hyperliquid.
+
+#### Phase 4: Cross-Chain Bridge
+
+11. **Relayer Processing**\
+    Across relayers process the bridge operation.
+12. **USDC Unlocking**\
+    USDC is unlocked on Hyperliquid.
+
+#### Phase 5: Hyperliquid Execution
+
+13. **Supply USDC to HyperLend**\
+    Supply USDC to earn yield.
+
+#### Phase 6: Receipt Aggregation
+
+14. **Transaction Receipt Collection**\
+    The API collects all transaction receipts.
+15. **Receipt Return**\
+    The details are returned to the SDK, frontend, and user.
+
+#### Phase 7: Error Handling
+
+16. **Execution Monitoring**\
+    If any action fails, execution halts, returning partial results with error information.
