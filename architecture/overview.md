@@ -1,5 +1,7 @@
 # Overview
 
+{% embed url="https://youtu.be/TRhefQYM_ec" %}
+
 ### Benefit
 
 #### Collateralize a wide range of yield assets across chains
