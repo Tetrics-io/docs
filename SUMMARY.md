@@ -1,11 +1,8 @@
 # Table of contents
 
-* [Welcome](README.md)
-
 ## Architecture
 
-* [Overview](architecture/overview.md)
-* [Relayer-Based Orchestration](architecture/relayer-based-orchestration.md)
+* [Relayer-Based Orchestration](README.md)
 * [Intent-Centric framework](architecture/intent-centric-framework/README.md)
   * [Intents](architecture/intent-centric-framework/intents.md)
   * [Solvers](architecture/intent-centric-framework/solvers/README.md)
@@ -31,9 +28,11 @@
 
 ## Strategies
 
+* [Welcome](strategies/welcome.md)
+* [Overview](strategies/overview.md)
 * [Roadmap](roadmap.md)
-* [Overview](strategies/overview/README.md)
-  * [Vault Operation](strategies/overview/vault-operation.md)
-  * [Yield Farming Management](strategies/overview/yield-farming-management.md)
+* [Overview](strategies/overview-1/README.md)
+  * [Vault Operation](strategies/overview-1/vault-operation.md)
+  * [Yield Farming Management](strategies/overview-1/yield-farming-management.md)
 * [Customized Lending Pool](architecture/customized-lending-pool.md)
 * [Declarative Input to Atomic On‑Chain Execution](strategies/declarative-input-to-atomic-on-chain-execution.md)

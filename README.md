@@ -1,25 +1,50 @@
----
-description: Unified Margin Infrastructure for Exchange Builder on Hyperliquid
----
+# Relayer-Based Orchestration
 
-# Welcome
+Tetrics unifies complex, multi-leg flows into a single transaction, reducing execution risk and enabling a seamless unified-margin experience on Hyperliquid.
 
-Hyperliquid is the fastest-growing ecosystems in crypto. With on-chain transparency and deep native liquidity, builders can launch their own exchanges while tapping Hyperliquid liquidity.
+1. Builders define flows via JSON/REST API\
+   (e.g., "Supply wETH on Aave → Borrow USDC on Aave → Bridge USDC to destination, Hyperliquid core or designated HIP-3 Exchange)
+2. A relayer sequences and executes actions atomically on the same chain or orchestrates cross-chain flows with settlement guarantees.
+3. Built-in safeguards include pre-trade validation, slippage guards, health checks, and failure recovery with compensating actions.
 
-Anyone can build perpetual exchange using Builder Code, and customize own perpetual market using HIP-3. Powered by Hyperliquid liquidity, Perps-as-a-Service is now expanding rapidly across the broader crypto ecosystem.
+### How it works
 
-<figure><img src=".gitbook/assets/スクリーンショット 2025-10-15 午後4.35.02.png" alt=""><figcaption><p>Live Exchange Builder Analytics on Hyperliquid <a href="https://app.coinmarketman.com/hypertracker/builders">*Hypertracker</a></p></figcaption></figure>
+#### Definition
 
-### What Tetrics Does
+Builders compose route through our API by specifying actions, parameters, and risk constraints such as maximum slippage and minimum health factor. Each flows includes:
 
-#### _**Hyperliquid Liquidity × DeFi  Liquidity across chains**_
+* Collateral sourcing (e.g., weETH on mainnet)
+* Venue-specific actions (e.g., supply/borrow on Aave, open/close position on Hyperliquid)
+* Bridging (e.g., Across: USDC from Mainnet → Hyperliquid)
+* Risk parameters (e.g., maximum leverage, liquidation buffers)
 
-In DeFi, new yield assets continuously appear across many chains. However, traders cannot use them as collateral for trading perps on Hyperliquid — which leads to missed huge opportunities, this is where Tetrics comes in.
+#### Pre-Trade Validation & Risk Engine
 
-If you’re using Builder Code or operating a HIP-3 exchange, Tetrics unlocks:
+* **Portfolio Simulation:** Computes post-trade positions, liabilities, and health across venues.
+* **Guardrails:** Enforces user-configurable limits including slippage bands, minimum collateral ratios, and maximum borrow amounts.
+* **Oracle Checks:** Validates prices, ensures data freshness, and rejects route that would breach health thresholds.
 
-* _Collateralize a wide range of yield assets across chains_
-* _Seamless unified-margin trading experience_
-* _One integration — minimal development effort_
+#### Execution Modes
 
-Build different with Tetrics.
+* **Same-Chain Atomic:** All actions execute in a single transaction bundle with no partial failures.
+* **Cross-Chain Orchestrated:** Steps sequence across domains with explicit SLAs, timeouts, and compensations for failed legs.
+
+#### Settlement & Monitoring
+
+* **Settlement Watchers:** Track bridge finality and gate dependent actions until funds arrive.
+* **Portfolio Accounting:** Real-time position tracking, PnL, funding/borrow costs, and health alerts.
+* **Failure Recovery:** Compensating actions and user-configurable retry/cancel policies.
+* Portfolio-level risk checks spanning perpetuals, spot, and credit positions.
+* Collateral mobility and netting under a single health factor.
+
+#### Cross-Chain Collateral Orchestration
+
+* Bridge selection and quote optimization (Across, deBridge, LayerZero, Axelar).
+* In-flight risk management with haircuts during transfer windows.
+* Settlement watchers and dependent action gating for reliable multi-hop flows.
+
+#### Risk-Aware Flow Optimization
+
+* Pre-execution simulation against portfolio state and market conditions.
+* Failure modes with explicit recovery paths and user controls.
+* Transparency through real-time flow status, gas usage, and PnL attribution.
