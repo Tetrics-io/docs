@@ -2,7 +2,7 @@
 
 ## Supported Protocols
 
-Tetrics SDK supports 8 DeFi protocols across Ethereum and Hyperliquid. This page provides an overview of all available protocols and their capabilities.
+Tetrics SDK supports 8 DeFi protocols across EVM and working on to expand into Solana. This page provides an overview of all available protocols and their capabilities.
 
 ### Protocol Matrix
 
