@@ -1,9 +1,9 @@
 # Relayer-Based Orchestration
 
-Tetrics unifies complex, multi-leg flows into a single transaction, reducing execution risk and enabling a seamless unified-margin experience on Hyperliquid.
+Tetrics unifies complex, multi-leg flows into a single transaction, reducing execution risk and enabling a seamless unified-margin experience on Kalshi.
 
 1. Builders define flows via JSON/REST API\
-   (e.g., "Supply wETH on Aave → Borrow USDC on Aave → Bridge USDC to destination, Hyperliquid core or designated HIP-3 Exchange)
+   (e.g., "Supply wETH on Aave → Borrow USDC on Aave → Bridge USDC to destination, Kalshi)
 2. A relayer sequences and executes actions atomically on the same chain or orchestrates cross-chain flows with settlement guarantees.
 3. Built-in safeguards include pre-trade validation, slippage guards, health checks, and failure recovery with compensating actions.
 
@@ -14,8 +14,8 @@ Tetrics unifies complex, multi-leg flows into a single transaction, reducing exe
 Builders compose route through our API by specifying actions, parameters, and risk constraints such as maximum slippage and minimum health factor. Each flows includes:
 
 * Collateral sourcing (e.g., weETH on mainnet)
-* Venue-specific actions (e.g., supply/borrow on Aave, open/close position on Hyperliquid)
-* Bridging (e.g., Across: USDC from Mainnet → Hyperliquid)
+* Venue-specific actions (e.g., supply/borrow on Aave, open/close position on Kalshi)
+* Bridging (e.g., Across: USDC from Mainnet → Kalshi)
 * Risk parameters (e.g., maximum leverage, liquidation buffers)
 
 #### Pre-Trade Validation & Risk Engine
